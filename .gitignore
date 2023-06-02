@@ -1,2 +1,3 @@
 skyhookdm/scripts/deploy/128MB.uncompressed.parquet
 /home/yue21/skyhookdm/scripts/deploy/arrow
+tpch_query/tpch-kit
