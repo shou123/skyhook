@@ -83,7 +83,7 @@ This will write 10 of ~128MB Parquet files to `/mnt/cephfs/dataset` using a Ceph
 
 6. Build and run the example client code.
 ```bash
-g++ -std=c++17 ./tpch_data_query.cc -g -larrow_skyhook -larrow_dataset -larrow -o tpch_data_query
+g++ -std=c++17 ./tpch_data_query.cc -g -larrow_skyhook -larrow_dataset -larrow -lduckdb -o tpch_data_query
 export LD_LIBRARY_PATH=/usr/local/lib
 ./tpch_data_query file:///mnt/cephfs/tpch_sf100_parquet_2G 22
 ```
